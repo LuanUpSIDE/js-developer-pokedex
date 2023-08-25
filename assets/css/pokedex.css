@@ -109,9 +109,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.pokemon .detail:hover{
-    padding-bottom: 6rem;
-}
+
+
 
 
 .pokemon .detail .types {
@@ -129,6 +128,32 @@
     filter: brightness(1.1);
     text-align: center;
 }
+
+.stats{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+.stat{
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: left; 
+    visibility: hidden;
+}
+
+.stats:hover .stat {
+    visibility: visible;
+}
+
 
 .pokemon .detail img {
     max-width: 100%;
