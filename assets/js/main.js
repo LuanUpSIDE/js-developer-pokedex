@@ -33,11 +33,9 @@ function convertPokemonDetailToLi(pokemon){
             <ol class="types">
                 ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
             </ol>
-            <ul class="stats">
-                ${pokemon.stats.map((stat)=> `<li class="stat">${stat}:
-                ${pokemon.base_stats.map((base_stat) => `<ul><li>${base_stat}</li></ul>`).join('')}
-                </li>`).join('')}
-            </ul>
+            <ol class="stats">
+                ${pokemon.stats.map((stat)=> `<li class="stat">${stat}:</li>`).join('')}
+            </ol>
 
 
         </div>
